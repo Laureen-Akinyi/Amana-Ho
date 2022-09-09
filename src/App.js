@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import ModalForm from './Components/Modals/Modal'
 import DataTable from './Components/Tables/DataTable'
+
+// import Header from './Header'
 // import { BrowserRouter, Route } from "react-router-dom";
 
 
@@ -68,18 +70,6 @@ class App extends Component {
   }
 }
 
-// function App() {
-//   return (
 
-//   <BrowserRouter>
-//   <Route>
-//     <Route exact path="/">
-//       <Home />
-//   </Route>
-//   </BrowserRouter>
-
-//  ); 
-
-// }
 
 export default App
