@@ -19,7 +19,7 @@ class AddEditForm extends React.Component {
 
   submitFormAdd = e => {
     fetch('http://localhost:9292/patients', {
-      method: 'post',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -48,7 +48,7 @@ class AddEditForm extends React.Component {
 
   submitFormEdit = e => {
     fetch('http://localhost:9292/patients', {
-      method: 'put',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -77,7 +77,6 @@ class AddEditForm extends React.Component {
   }
 
   componentDidMount(){
-    // if item exists, populate the state with proper data
     if(this.props.item){
       const { id, first_name, last_name, age, weight, phone, kin, drug_admin } = this.props.item
       this.setState({ id, first_name, last_name, age, weight, phone, kin, drug_admin })

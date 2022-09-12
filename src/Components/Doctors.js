@@ -1,11 +1,12 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, } from 'reactstrap';
+// import { Button, Form, FormGroup, Label, Input, } from 'reactstrap';
+// import AddEditForm from './Forms/FormAddEdit';
 
 class Doctors extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            doctors: [] // customers: []
+            doctors: []
         }
     }
 
@@ -27,7 +28,8 @@ class Doctors extends React.Component {
     
     return(
         <div>
-            <table class="table">
+            <table class="table" >
+  
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -35,7 +37,9 @@ class Doctors extends React.Component {
       <th scope="col">Last</th>
       <th scope="col">Phone</th>
       <th scope="col">Department</th>
-      <th scope="col">Action</th>
+      {/* <th scope="col">Action</th> */}
+      <th>
+      </th>
     </tr>
     
   </thead>
@@ -44,10 +48,11 @@ class Doctors extends React.Component {
     <tr>
       <th scope="row">{doctor.id}</th>
       <td>{doctor.first_name}</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>dental</td>
+      <td>{doctor.last_name}</td>
+      <td>{doctor.phone}</td>
+      <td>{doctor.department}</td>
     </tr>
+    
   )
    }
   </tbody>
