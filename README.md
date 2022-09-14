@@ -1,1 +1,0 @@
-# Mosocho-Hospital-Management-Project
