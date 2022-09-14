@@ -14,7 +14,7 @@ function RoutesHandler() {
 
                
                 <Route exact path='/' element={<App/>}/>
-                {/* <Route exact path='/' element={<App/>}/> */}
+                <Route exact path='/home' element={<App/>}/>
                 <Route exact path='/doctors' element={<Doctors/>}/>
                 <Route exact path='/about' element={<About/>}/>
                 <Route exact path='/contact' element={<Contact/>}/>

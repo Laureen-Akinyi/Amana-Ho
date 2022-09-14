@@ -5,11 +5,13 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from "react-router-dom";
 import RoutesHandler from './RoutesHandler';
+import ColorSchemesExample from './Components/Navbar';
+
 
 ReactDOM.render(
  
 <BrowserRouter>
-
+<ColorSchemesExample/>,
 <RoutesHandler/>,
 </BrowserRouter>,
 document.getElementById('root'));
